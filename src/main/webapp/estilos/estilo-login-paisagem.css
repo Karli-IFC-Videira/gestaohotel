@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .login-side {
+        height: auto;
+        padding: 5px;
+        margin-top: -12px;
+        padding-top: 2px;
+        overflow-y: auto;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 50%; /* Diminui o tamanho do formulário em modo paisagem */
+        padding: 10px; /* Corrigido para incluir 'px' */
+        overflow-y: auto; /* Adicionado para garantir que o contêiner permita a rolagem */
+        height: 100vh; /* Adicionado para garantir que o contêiner ocupe toda a altura da viewport */
+        box-sizing: border-box; /* Adicionado para incluir padding e border no cálculo da altura */
+        padding-right: 70px; /* Adicionado para mover a barra de rolagem mais à direita */
+        margin-left: 80px;
+    }
+}

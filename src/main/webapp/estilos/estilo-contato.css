@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.contatanos {
+    display: flex;
+    flex-direction: row; /* Em dispositivos maiores, o layout será lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 2rem;
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+.contacto{
+	 margin-top: 70px; 
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;
+    order: 1; /* No desktop, o mapa ficará à esquerda */
+    margin-right: 2rem; /* Espaçamento à direita do mapa em telas grandes */
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px; /* Altura padrão para o mapa */
+    border: 0;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 500px;
+    order: 2; /* No desktop, o texto ficará à direita */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza o container do texto horizontalmente */
+}
+
+.contact-details h2 {
+    font-size: 1.5rem;
+    color: #4b431a;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.convite-text {
+    font-size: 1.2rem;
+    color: #4b431a;
+    margin: 1rem 0;
+    padding-top: 20px;
+}
+
+/* Estilo do botão */
+.button-contato {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button-contato:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 920px) {
+    .contatanos {
+        flex-direction: column; /* Em dispositivos menores, o layout será em coluna */
+        align-items: center; /* Centraliza os itens no centro da tela */
+    }
+
+    .map {
+        order: 2; /* O mapa será exibido embaixo */
+        margin-right: 0;
+        margin-bottom: 2rem; /* Espaçamento abaixo do mapa em dispositivos menores */
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-details {
+        order: 1; /* O texto será exibido em cima */
+        margin-bottom: 0; /* Remove o espaçamento abaixo do texto */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Centraliza o container do texto horizontalmente */
+    }
+
+    .map iframe {
+        height: 300px; /* Ajusta a altura do mapa para dispositivos menores */
+    }
+
+    .button-contato {
+        padding: 1rem 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details p, .convite-text {
+        font-size: 1rem; /* Ajusta o tamanho da fonte em dispositivos muito pequenos */
+    }
+
+    .button-contato {
+        padding: 1rem 1rem;
+        font-size: 0.9rem;
+    }
+}

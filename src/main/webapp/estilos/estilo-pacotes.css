@@ -1,0 +1,142 @@
+/* Estilos Gerais */
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.intro-header {
+    background-color:  rgba(222, 250, 222, 0.511); /* Cor de fundo suave */
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem; /* Espaço abaixo da introdução */
+    padding-top: 109px;
+}
+
+.intro-header p {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto */
+    max-width: 800px; /* Largura máxima para melhor leitura */
+    margin: 0 auto; /* Centraliza o texto */
+}
+
+h1.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #006400; /* Cor contrastante para os títulos */
+    text-align: center;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 1.7rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.packages-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 0;
+    background-color: #dcffde3f;
+}
+
+.package-item { 
+    background-color: #fff8dc;
+    background-image: url('./img/background-pattern.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante espaço igual entre o conteúdo e o botão */
+    min-height: 400px; /* Define uma altura mínima para os pacotes */
+}
+
+.package-item img {
+    width: 100%;
+    height: 200px; /* Altura fixa para imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    border-radius: 5px;
+    margin-bottom: 1rem; /* Espaçamento abaixo da imagem */
+    transition: transform 0.3s ease;
+}
+
+h2.subtitulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #006400; /* Cor contrastante para os títulos */
+    text-align: center;
+}
+
+h2.titulo-descricao {
+    color: black;
+    font-size: 1.9rem;
+}
+
+p.package-price {
+    font-size: 1.2rem;
+    color: black; /* Texto dos parágrafos branco */
+    margin: 0.5rem 0; /* Espaçamento ao redor dos parágrafos */
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0); /* Texto da descrição branco */
+}
+
+/* Remover sublinhado nos links e herdar cor */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo do botão */
+.button {
+    display: block; /* Garante que o botão ocupe a largura total disponível */
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #005effdd; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0048b3de; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Efeito de Hover: Brilhar a caixa do pacote */
+.package-item:hover img {
+    transform: scale(1.035); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .packages-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-item {
+        width: 80%;
+    }
+}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 95px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.required-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.btn-group-right {
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.dt-buttons {
+    margin-bottom: 30px;
+}
+
+.dt-buttons .btn {
+    height: 50px;
+    /* ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-length {
+    margin-top: 25px;
+}
+
+.dt-paging {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha para a direita */
+    align-items: center;
+    /* Mantém os itens centrados verticalmente */
+    margin-top: 10px;
+}
+
+.btn-danger, .btn-success, .btn-info {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger{
+	background-color: #BB2D3B;
+	color: white;
+}
+
+.btn-danger:hover{
+	background-color: red !important;
+}
+
+.btn-sucess:hover{
+	background-color: #198554 !important;
+}
+
+.btn-info{
+	background-color: #0CB4D6;
+	color: black
+}
+
+.btn-info:hover{
+	background-color: #0080ff;
+}
+
+.btn-editar, .btn-excluir {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.btn-editar{
+	margin-right: 5px;
+}
+
+.btn-excluir{
+	margin-left: 5px;
+}
+
+.btn-editar:hover, .btn-excluir:hover {
+    color: blue;          /* Muda a cor ao passar o mouse, opcional */
+}
+
+.fechar{
+	background-color: #BB2D3B;
+}
+
+.fechar:hover{
+	background-color: red;
+}
+
+.cadastrar-produto {
+    background-color: #0560e8 !important;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.cadastrar-produto:hover {
+    background-color: #0560e8ce !important;
+    color: white;
+    font-weight: bolder;
+}
+
+.container-tabela {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px transparent #ccc;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    margin-right: 5px;
+    padding-top: 20px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#editar, #excluir {
+    border: none;
+    background-color: transparent;
+}
+
+th, td {
+    text-align: center !important;
+}

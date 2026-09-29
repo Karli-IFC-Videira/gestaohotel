@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+main {
+	margin-top: 78px;
+}
+
+/* Estilos gerais para as seções */
+.box-historia, .box-turismo, .box-turismo-casa-cultura,
+	.box-turismo-museu-jagunco, .box-turismo-praca-frey {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 50px;
+}
+
+.box-historia {
+	background-color: rgba(60, 179, 114, 0.10);
+}
+
+.box-turismo {
+	background-color: #eea1a118;
+}
+
+.box-turismo-casa-cultura {
+	background-color: rgba(240, 255, 255, 0.269);
+}
+
+.box-turismo-museu-jagunco {
+	background-color: azure;
+}
+
+.box-turismo-praca-frey {
+	background-color: rgba(245, 245, 220, 0.274);
+}
+
+.text-section, .carousel-container {
+	flex: 1;
+	max-width: 50%;
+}
+
+.text-section {
+	padding-top: 20px;
+}
+
+.carousel-item img {
+	object-fit: cover;
+	height: 320px;
+	width: 100%;
+}
+
+@media ( max-width : 768px) {
+	.box-historia, .box-turismo, .box-turismo-casa-cultura,
+		.box-turismo-museu-jagunco, .box-turismo-praca-frey {
+		flex-direction: column;
+		padding: 20px;
+	}
+	.text-section {
+		max-width: 100%;
+		text-align: center;
+	}
+	.carousel-container {
+		max-width: 100%;
+		padding: 0;
+	}
+	.carousel-item img {
+		width: calc(100% + 20px);
+		margin-left: -10px;
+	}
+
+	/* Ordem para dispositivos menores */
+	.box-turismo-casa-cultura .text-section, .box-turismo-museu-jagunco .text-section,
+		.box-turismo-praca-frey .text-section {
+		order: -1;
+	}
+}
+
+/* Ordem para dispositivos maiores */
+@media ( min-width : 769px) {
+	.box-turismo:nth-child(2n) .text-section, .box-turismo:nth-child(2n) .carousel-container
+		{
+		order: 2;
+	}
+	.box-turismo:nth-child(2n) .carousel-container {
+		order: 1;
+	}
+}
+
+/* Estilo para a seção de chamada à ação */
+.call-to-action {
+	background-color: white;
+	padding: 40px 0;
+	text-align: center;
+	border-top: 2px solid #000;
+}
+
+.container-acao {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.call-to-action h2 {
+	font-size: 2em;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.call-to-action p {
+	font-size: 1.2em;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.2em;
+	color: #fff;
+	background-color: #28a745;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+}
+
+.cta-button:hover {
+	background-color: #218838;
+	cursor: pointer;
+}
+
+@media ( max-width : 576px) {
+	.cta-button {
+		font-size: 1.1em;
+		padding: 15px 25px;
+	}
+	.call-to-action p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

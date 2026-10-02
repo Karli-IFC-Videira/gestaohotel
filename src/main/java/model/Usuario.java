@@ -1,11 +1,5 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-
-@Getter
-@Setter
 public class Usuario {
 	private String cpfUsuario;
 	private String nomeUsuario;
@@ -29,6 +23,78 @@ public class Usuario {
 		this.email = email;
 		this.celular = celular;
 		this.nomeLogin = nomeLogin;
+		this.senha = senha;
+	}
+
+	public String getCpfUsuario() {
+		return cpfUsuario;
+	}
+
+	public void setCpfUsuario(String cpfUsuario) {
+		this.cpfUsuario = cpfUsuario;
+	}
+
+	public String getNomeUsuario() {
+		return nomeUsuario;
+	}
+
+	public void setNomeUsuario(String nomeUsuario) {
+		this.nomeUsuario = nomeUsuario;
+	}
+
+	public String getSobrenomeUsuario() {
+		return sobrenomeUsuario;
+	}
+
+	public void setSobrenomeUsuario(String sobrenomeUsuario) {
+		this.sobrenomeUsuario = sobrenomeUsuario;
+	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getNivelAcesso() {
+		return nivelAcesso;
+	}
+
+	public void setNivelAcesso(String nivelAcesso) {
+		this.nivelAcesso = nivelAcesso;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getNomeLogin() {
+		return nomeLogin;
+	}
+
+	public void setNomeLogin(String nomeLogin) {
+		this.nomeLogin = nomeLogin;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
 		this.senha = senha;
 	}
 }

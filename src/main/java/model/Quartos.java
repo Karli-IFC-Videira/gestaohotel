@@ -1,10 +1,5 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class Quartos {
     private int numeroQuarto;
     private String tipoQuarto;
@@ -19,4 +14,36 @@ public class Quartos {
         this.valorDiaria = valorDiaria;
         this.estatus = estatus;
     }
+
+	public int getNumeroQuarto() {
+		return numeroQuarto;
+	}
+
+	public void setNumeroQuarto(int numeroQuarto) {
+		this.numeroQuarto = numeroQuarto;
+	}
+
+	public String getTipoQuarto() {
+		return tipoQuarto;
+	}
+
+	public void setTipoQuarto(String tipoQuarto) {
+		this.tipoQuarto = tipoQuarto;
+	}
+
+	public double getValorDiaria() {
+		return valorDiaria;
+	}
+
+	public void setValorDiaria(double valorDiaria) {
+		this.valorDiaria = valorDiaria;
+	}
+
+	public String getEstatus() {
+		return estatus;
+	}
+
+	public void setEstatus(String estatus) {
+		this.estatus = estatus;
+	}
 }

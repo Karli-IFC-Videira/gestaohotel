@@ -1,11 +1,6 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
-
 //Classe para representar um item da venda
-@Getter
-@Setter
 public class VendasItem {
 	private int codigoProduto;
 	private String nomeProduto;
@@ -21,6 +16,54 @@ public class VendasItem {
 		this.quantidade = quantidade;
 		this.subtotal = subtotal;
 		this.valorVenda = valorVenda;
+		this.nomeLogin = nomeLogin;
+	}
+
+	public int getCodigoProduto() {
+		return codigoProduto;
+	}
+
+	public void setCodigoProduto(int codigoProduto) {
+		this.codigoProduto = codigoProduto;
+	}
+
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
+
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public double getSubtotal() {
+		return subtotal;
+	}
+
+	public void setSubtotal(double subtotal) {
+		this.subtotal = subtotal;
+	}
+
+	public double getValorVenda() {
+		return valorVenda;
+	}
+
+	public void setValorVenda(double valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+
+	public String getNomeLogin() {
+		return nomeLogin;
+	}
+
+	public void setNomeLogin(String nomeLogin) {
 		this.nomeLogin = nomeLogin;
 	}
 }

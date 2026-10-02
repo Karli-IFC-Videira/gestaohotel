@@ -1,11 +1,7 @@
 package model;
 
 import java.time.LocalDate;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
 public class HospedagemReserva {
     private int codigoReserva;
     private LocalDate dataReserva;
@@ -22,4 +18,52 @@ public class HospedagemReserva {
         this.cpfUsuario = cpfUsuario;
         this.nomeUsuario = nomeUsuario;
     }
+
+	public int getCodigoReserva() {
+		return codigoReserva;
+	}
+
+	public void setCodigoReserva(int codigoReserva) {
+		this.codigoReserva = codigoReserva;
+	}
+
+	public LocalDate getDataReserva() {
+		return dataReserva;
+	}
+
+	public void setDataReserva(LocalDate dataReserva) {
+		this.dataReserva = dataReserva;
+	}
+
+	public LocalDate getDataEntrada() {
+		return dataEntrada;
+	}
+
+	public void setDataEntrada(LocalDate dataEntrada) {
+		this.dataEntrada = dataEntrada;
+	}
+
+	public LocalDate getDataSaida() {
+		return dataSaida;
+	}
+
+	public void setDataSaida(LocalDate dataSaida) {
+		this.dataSaida = dataSaida;
+	}
+
+	public String getCpfUsuario() {
+		return cpfUsuario;
+	}
+
+	public void setCpfUsuario(String cpfUsuario) {
+		this.cpfUsuario = cpfUsuario;
+	}
+
+	public String getNomeUsuario() {
+		return nomeUsuario;
+	}
+
+	public void setNomeUsuario(String nomeUsuario) {
+		this.nomeUsuario = nomeUsuario;
+	}
 }
